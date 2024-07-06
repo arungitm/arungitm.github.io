@@ -24,6 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     consignmentsSlider.addEventListener('input', updateValues);
 
+    const sliderNumbers = document.querySelectorAll('.slider-number');
+    sliderNumbers.forEach(number => {
+        number.addEventListener('click', (e) => {
+            consignmentsSlider.value = e.target.getAttribute('data-value');
+            updateValues();
+        });
+    });
+
     const cycleData = [
         { day: 0, profit: 0 },
         { day: 12, profit: 9500 },
@@ -69,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     title: { display: true, text: 'Days' },
                     grid: { display: false }
                 },
-                y: { 
-                    title: { display: true, text: 'Profit (USD)' },
+                y: {
+                                        title: { display: true, text: 'Profit (USD)' },
                     beginAtZero: true
                 }
             }
@@ -122,6 +130,11 @@ document.addEventListener('DOMContentLoaded', function () {
         profitComparisonChart.data.datasets[0].data = comparisonData.map((data, index) => 28500 * (index + 1));
         profitComparisonChart.update();
     };
+
+    updateValues(); // Initialize with default values
+});
+
+
 
     updateValues(); // Initialize with default values
 });
