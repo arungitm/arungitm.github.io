@@ -22,76 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         updateChart(consignments);
     };
 
-<<<<<<< HEAD
     consignmentsSlider.addEventListener('input', () => updateValues(parseInt(consignmentsSlider.value)));
     consignmentsInput.addEventListener('input', () => {
         let value = parseInt(consignmentsInput.value);
         if (value < 1) value = 1;
         if (value > 5) value = 5;
         updateValues(value);
-=======
-    consignmentsSlider.addEventListener('input', updateValues);
-
-    const sliderNumbers = document.querySelectorAll('.slider-number');
-    sliderNumbers.forEach(number => {
-        number.addEventListener('click', (e) => {
-            consignmentsSlider.value = e.target.getAttribute('data-value');
-            updateValues();
-        });
-    });
-
-    const cycleData = [
-        { day: 0, profit: 0 },
-        { day: 12, profit: 9500 },
-        { day: 24, profit: 19000 },
-        { day: 36, profit: 28500 },
-    ];
-
-    const comparisonData = [
-        { name: '1 Consignment', profit: 28500 },
-        { name: '2 Consignments', profit: 57000 },
-        { name: '3 Consignments', profit: 85500 },
-        { name: '4 Consignments', profit: 114000 },
-        { name: '5 Consignments', profit: 142500 },
-    ];
-
-    const profitGrowthChart = new Chart(document.getElementById('profit-growth-chart'), {
-        type: 'line',
-        data: {
-            labels: cycleData.map(data => data.day),
-            datasets: [{
-                label: 'Profit (USD)',
-                data: cycleData.map(data => data.profit),
-                borderColor: '#3498db',
-                backgroundColor: 'rgba(52, 152, 219, 0.1)',
-                fill: true,
-                tension: 0.4
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Profit Growth Over Time'
-                },
-                tooltip: {
-                    mode: 'index',
-                    intersect: false,
-                }
-            },
-            scales: {
-                x: { 
-                    title: { display: true, text: 'Days' },
-                    grid: { display: false }
-                },
-                y: { 
-                    title: { display: true, text: 'Profit (USD)' },
-                    beginAtZero: true
-                }
-            }
-        }
->>>>>>> 605607baf21b711d650230d90235cd08cba7b2ad
     });
 
     const sliderNumbers = document.querySelectorAll('.slider-number');
@@ -147,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateValues(1); // Initialize with default values
 });
 
-<<<<<<< HEAD
 function showInfo(step) {
     const infoDiv = document.getElementById('cycleInfo');
     let content = '';
@@ -168,3 +103,4 @@ function showInfo(step) {
     infoDiv.innerHTML = content;
     infoDiv.classList.add('show');
 }
+
