@@ -31,26 +31,11 @@ header {
     margin-top: 0;
 }
 
-<<<<<<< HEAD
 h2 {
     color: #2c3e50; /* Professional dark blue color */
     margin-bottom: 15px;
     border-bottom: 2px solid #2c3e50; /* Adding a bottom border for style */
     padding-bottom: 5px;
-=======
-.investment-calculator {
-    background-color: #ecf0f1;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-}
-
-.process-breakdown {
-    background-color: #ecf0f1;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 30px;
->>>>>>> 605607baf21b711d650230d90235cd08cba7b2ad
 }
 
 .investment-simulator, .card, .investment-cycle-explorer, .chart-container, .process-breakdown, .why-invest {
@@ -63,25 +48,6 @@ h2 {
 
 .slider-container {
     margin-bottom: 20px;
-    position: relative;
-}
-
-.slider-numbers {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -10px; /* Adjusted to make space between slider and numbers */
-}
-
-.slider-number {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #ecf0f1;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.slider-number:hover {
-    background-color: #bdc3c7;
 }
 
 .slider-numbers {
@@ -104,11 +70,7 @@ h2 {
 
 input[type="range"] {
     width: 100%;
-<<<<<<< HEAD
     margin-bottom: 10px;
-=======
-    margin-bottom: 20px; /* Adjusted to make space between slider and numbers */
->>>>>>> 605607baf21b711d650230d90235cd08cba7b2ad
 }
 
 .stats {
