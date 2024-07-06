@@ -77,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     title: { display: true, text: 'Days' },
                     grid: { display: false }
                 },
-                y: {
-                                        title: { display: true, text: 'Profit (USD)' },
+                y: { 
+                    title: { display: true, text: 'Profit (USD)' },
                     beginAtZero: true
                 }
             }
@@ -134,7 +134,4 @@ document.addEventListener('DOMContentLoaded', function () {
     updateValues(); // Initialize with default values
 });
 
-
-
-    updateValues(); // Initialize with default values
-});
+           
