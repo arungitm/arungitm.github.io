@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Oil Export Investment Opportunity</title>
+    <title>EnerBlaze Global - Premium Oil Export Investment Opportunity</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1 class="title">Premium Oil Export Investment Opportunity</h1>
+            <h1 class="title">EnerBlaze Global</h1>
             <p class="subtitle">Scalable High-Margin Venture for Discerning Investors</p>
         </header>
+
+        <div class="oil-price-ticker">
+            <div class="ticker-content">
+                Brent Crude: $75.23 ▲ 1.2% | WTI Crude: $72.65 ▲ 0.8% | Natural Gas: $2.61 ▲ 3.5% | Heating Oil: $2.41 ▼ 0.3% | 
+            </div>
+        </div>
         
-        <section class="investment-calculator">
+        <section class="investment-simulator">
             <h2>Tailor Your Investment</h2>
             <div class="slider-container">
                 <label for="consignments-slider">Select number of consignments (1-5):</label>
@@ -28,7 +34,7 @@
                 </div>
             </div>
             <div class="stats">
-                <div class="stat-item"><span>Consignments:</span> <strong id="consignments-value">1</strong></div>
+                <div class="stat-item"><span>Consignments:</span> <input type="number" id="consignments-input" min="1" max="5" value="1"></div>
                 <div class="stat-item"><span>Investment:</span> <strong>$<span id="investment-value">700,000</span></strong></div>
                 <div class="stat-item"><span>Profit (36 days):</span> <strong>$<span id="profit-value">28,500</span></strong></div>
                 <div class="stat-item"><span>ROI (36 days):</span> <strong><span id="roi-value">4.07</span>%</strong></div>
@@ -58,10 +64,18 @@
             </section>
         </div>
         
-        <section class="chart-container">
-            <h2>Profit Growth Over 36 Days</h2>
-            <canvas id="profit-growth-chart"></canvas>
+        <section class="investment-cycle-explorer">
+            <h2>Investment Cycle Explorer</h2>
+            <div class="interactive-cycle">
+                <div class="cycle-step" onclick="showInfo('purchase')">Raw Oil Purchase</div>
+                <div class="cycle-step" onclick="showInfo('refinery')">Refinery Processing</div>
+                <div class="cycle-step" onclick="showInfo('shipping')">Shipping</div>
+                <div class="cycle-step" onclick="showInfo('payment')">Payment Receipt</div>
+            </div>
+            <div id="cycleInfo" class="cycle-info"></div>
         </section>
+
+
 
         <section class="chart-container">
             <h2>Profit Comparison by Consignments</h2>
@@ -79,7 +93,7 @@
                 <li><strong>Day 8:</strong> Loading onto ship</li>
                 <li><strong>Day 9:</strong> Ship departure</li>
                 <li><strong>Day 11-12:</strong> Bill of Lading (BL) processing</li>
-                <li><strong>Day 12:</strong> Payment settlement (2-3 days after ship departure)</li>
+                <li><strong>Day 12:</strong> Payment settlement</li>
             </ol>
             <p><strong>Note:</strong> The entire process takes 12 days, with payment typically settled within 1 day after the BL is submitted.</p>
         </section>
@@ -93,13 +107,17 @@
                 <li><strong>Frequent Cycles:</strong> Consistent cash flow with new shipments every 2-3 days</li>
                 <li><strong>Proven Process:</strong> Efficient 12 day cycle from acquisition to payment</li>
                 <li><strong>Quality Assurance:</strong> Stringent refining and quality control protocols</li>
-                <li><strong>Attractive ROI:</strong> 4.07% return per consignment in a brief 36-day period</li>
+                <li><strong>Attractive ROI:</strong> 4.07% return in a brief 36-day period</li>
             </ul>
         </section>
         
         <footer>
             <p>Elevate your portfolio with our premium oil export venture.</p>
+<<<<<<< HEAD
+            <p>© 2023 EnerBlaze Global. All rights reserved. | <a href="#">Legal Disclaimer</a> | <a href="#">Risk Disclosure</a></p>
+=======
             <p>Thank You for your time</p>
+>>>>>>> 605607baf21b711d650230d90235cd08cba7b2ad
         </footer>
     </div>
 
