@@ -43,6 +43,7 @@ h2 {
     border-radius: 8px;
     margin-bottom: 30px;
 }
+
 .process-breakdown {
     background-color: #ecf0f1;
     padding: 30px;
@@ -65,11 +66,30 @@ h2 {
 
 .slider-container {
     margin-bottom: 20px;
+    position: relative;
+}
+
+.slider-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px; /* Adjusted to make space between slider and numbers */
+}
+
+.slider-number {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.slider-number:hover {
+    background-color: #bdc3c7;
 }
 
 input[type="range"] {
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 20px; /* Adjusted to make space between slider and numbers */
 }
 
 .stats {
